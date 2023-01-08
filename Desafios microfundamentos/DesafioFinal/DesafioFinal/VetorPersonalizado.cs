@@ -75,13 +75,13 @@
 
         public int RecuperarMaior()
         {
-            int maiorValor = 0;
+            int maiorValor = _vetor[0];
 
-            foreach (var valor in _vetor)
+            for (int i = 1; i < _vetor.Length; i++)
             {
-                if (valor > maiorValor)
+                if (_vetor[i] > maiorValor)
                 {
-                    maiorValor = valor;
+                    maiorValor = _vetor[i];
                 }
             }
 
